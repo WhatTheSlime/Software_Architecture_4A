@@ -8,3 +8,6 @@ Boy Quentin
 Khadhar Micka
 Lanouar Selim
 Le Guern Erwan
+
+Build travis Badge :
+[![Build Status](https://travis-ci.org/WhatTheSlime/gilded-rose.svg?branch=master)](https://travis-ci.org/WhatTheSlime/gilded-rose)
