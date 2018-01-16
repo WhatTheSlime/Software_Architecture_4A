@@ -22,7 +22,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -42,6 +42,7 @@
           <maxmem>256m</maxmem>
           <!-- aggregated reports for multi-module projects -->
           <aggregate>true</aggregate>
+          <check/>
         </configuration>
       </plugin>
     </plugins>
