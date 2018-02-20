@@ -1,12 +1,12 @@
 package fr.esiea;
 
+import junitparams.Parameters;
 import org.junit.Test;
 
 import org.assertj.core.api.Assertions;
 
 import org.junit.runner.RunWith;
 import junitparams.JUnitParamsRunner;
-import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
 public class GildedRoseTest {
