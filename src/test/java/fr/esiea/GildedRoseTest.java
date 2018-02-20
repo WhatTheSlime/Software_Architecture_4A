@@ -36,6 +36,16 @@ public class GildedRoseTest {
     }
 
     @Test
+    public void conjuredItemQualityTest() {
+        Item item = new Item("Conjured Test", 2018, 2, true);
+        Item[] items = {item};
+        GildedRose gildedrose = new GildedRose(items);
+
+        gildedrose.updateQuality();
+
+        Assertions.assertThat(item.quality).as("Conjured item quality decreased by 2").isEqualTo(0);
+    }
+    @Test
     @Parameters
     public void qualityAccordingToSellinTest(String itemName, int itemSellIn, int itemQuality,  int qualityExpected){
         Item item = new Item(itemName, itemSellIn, itemQuality);
@@ -84,4 +94,6 @@ public class GildedRoseTest {
                 new Object[] {"Backstage passes to a TAFKAL80ETC concert", -1, 10, 0},
         };
     }
+
+
 }
