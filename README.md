@@ -8,7 +8,7 @@ Andrieux Thomas
 Biacabe Jeremy
 Boy Quentin
 Khadhar Micka
-Lanouar Selim
+Lanouar Selim : WhatTheSlime
 Le Guern Erwan
 
 Build travis Badge :
