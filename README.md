@@ -3,7 +3,7 @@ Java project using Github Travis and IntelliJ
 
 ## Subject : https://github.com/ledoyen/tp-java/tree/master/projet/4A_2018
 
-## Team Members :
+### Team Members :
 ⋅⋅* Andrieux Thomas aka Noddin
 ⋅⋅* Biacabe Jeremy
 ⋅⋅* Boy Quentin
