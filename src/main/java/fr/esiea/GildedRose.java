@@ -16,7 +16,7 @@ class GildedRose {
                         items[i].quality = items[i].quality - 1;
                     }
                     if(items[i].conjured == true){
-                        items[i].quality = items[i].quality - 2;
+                        items[i].quality = items[i].quality - 1;
                     }
                 }
             } else {
@@ -51,7 +51,7 @@ class GildedRose {
                                 items[i].quality = items[i].quality - 1;
                             }
                             if(items[i].conjured == true){
-                                items[i].quality = items[i].quality - 2;
+                                items[i].quality = items[i].quality - 1;
                             }
                         }
                     } else {

@@ -8,13 +8,19 @@ public class Item {
 
     public int quality;
 
-    public boolean conjured;
+    public boolean conjured = false;
 
-    public Item(String name, int sellIn, int quality, boolean conjured) {
+    public Item(String name, int sellIn, int quality) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
-        this.conjured = conjured;
+    }
+
+    public Item(String name, int sellIn, int quality, boolean conjured) {
+      this.name = name;
+      this.sellIn = sellIn;
+      this.quality = quality;
+      this.conjured = conjured;
     }
 
     @Override
