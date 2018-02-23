@@ -36,15 +36,17 @@ public class GildedRoseTest {
     }
 
     @Test
-    public void conjuredItemQualityTest() {
-        Item item = new Item("Conjured Test", 2018, 2, true);
+    @Parameters
+    public void conjuredItemQualityTest(String itemName, int itemSellIn, int qualityExpected) {
+        Item item = new Item(itemName, itemSellIn, 2, true);
         Item[] items = {item};
         GildedRose gildedrose = new GildedRose(items);
 
         gildedrose.updateQuality();
 
-        Assertions.assertThat(item.quality).as("Conjured item quality decreased by 2").isEqualTo(0);
+        Assertions.assertThat(item.quality).as("Conjured item quality decreased by 2").isEqualTo(qualityExpected);
     }
+
     @Test
     @Parameters
     public void qualityAccordingToSellinTest(String itemName, int itemSellIn, int itemQuality,  int qualityExpected){
@@ -81,6 +83,13 @@ public class GildedRoseTest {
         };
     }
 
+    public static  Object[] parametersForConjuredItemQualityTest() {
+        return new Object[] {
+                new Object[] {"Conjured Test", 2, 0},
+                new Object[] {"Conjured Test", -1, 0},
+        };
+    }
+
     public static  Object[] parametersForQualityAccordingToSellinTest() {
         return new Object[] {
                 /* Once the sell by date has passed, Quality degrades twice as fast */
@@ -92,6 +101,8 @@ public class GildedRoseTest {
                 new Object[] {"Backstage passes to a TAFKAL80ETC concert", 5, 10, 13},
                     /* Quality drops to 0 after the concert */
                 new Object[] {"Backstage passes to a TAFKAL80ETC concert", -1, 10, 0},
+
+                new Object[] {"Aged Brie", -1, 10, 12},
         };
     }
 

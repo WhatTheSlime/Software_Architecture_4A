@@ -8,7 +8,7 @@ public class Item {
 
     public int quality;
 
-    public boolean conjured = false;
+    public boolean isConjured = false;
 
     public Item(String name, int sellIn, int quality) {
         this.name = name;
@@ -16,15 +16,15 @@ public class Item {
         this.quality = quality;
     }
 
-    public Item(String name, int sellIn, int quality, boolean conjured) {
+    public Item(String name, int sellIn, int quality, boolean isConjured) {
       this.name = name;
       this.sellIn = sellIn;
       this.quality = quality;
-      this.conjured = conjured;
+      this.isConjured = isConjured;
     }
 
     @Override
     public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality + ", isConjured = " + this.conjured;
+        return this.name + ", " + this.sellIn + ", " + this.quality + ", isConjured = " + this.isConjured;
     }
 }
