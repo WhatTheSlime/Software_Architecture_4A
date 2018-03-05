@@ -71,7 +71,7 @@ public class GildedRoseTest {
                 /* The Quality of an item is never more than 50 */
                 new Object[] {"Aged Brie", 50, 50},
                 /* "Sulfuras", being a legendary item, never has to decreases in Quality */
-                new Object[] {"Sulfuras, Hand of Ragnaros", 10, 10},
+                new Object[] {"Sulfuras, Hand of Ragnaros", 10, 80},
 
         };
     }
