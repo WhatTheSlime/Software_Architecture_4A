@@ -15,7 +15,7 @@ public class ItemTest {
 
     @Test
     public void toStringTest(){
-        Item item = new Item("TestName", 0, 0);
+        Item item = new Item("TestName", 0, 0, false);
 
         Assertions.assertThat(item.toString()).as("Item toString methode").isEqualTo(item.name + ", " + item.sellIn + ", " + item.quality + ", isConjured = " + item.isConjured);
     }

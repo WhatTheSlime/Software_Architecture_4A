@@ -8,13 +8,7 @@ public class Item {
 
     public int quality;
 
-    public boolean isConjured = false;
-
-    public Item(String name, int sellIn, int quality) {
-        this.name = name;
-        this.sellIn = sellIn;
-        this.quality = quality;
-    }
+    public boolean isConjured;
 
     public Item(String name, int sellIn, int quality, boolean isConjured) {
       this.name = name;
@@ -22,7 +16,7 @@ public class Item {
       this.quality = quality;
       this.isConjured = isConjured;
     }
-
+  
     @Override
     public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality + ", isConjured = " + this.isConjured;

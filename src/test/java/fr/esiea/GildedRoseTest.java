@@ -14,7 +14,7 @@ public class GildedRoseTest {
     @Test
     @Parameters
     public void qualityTest(String itemName, int itemQuality, int qualityExpected) {
-        Item item = new Item(itemName, 2018, itemQuality);
+        Item item = new Item(itemName, 2018, itemQuality, false);
         Item[] items = {item};
         GildedRose gildedrose = new GildedRose(items);
 
@@ -26,7 +26,7 @@ public class GildedRoseTest {
     @Test
     @Parameters
     public void sellInTest(String itemName, int itemSellIn, int sellinExpected){
-        Item item = new Item(itemName, itemSellIn, 10);
+        Item item = new Item(itemName, itemSellIn, 10, false);
         Item[] items = {item};
 
         GildedRose gildedrose = new GildedRose(items);
@@ -50,7 +50,7 @@ public class GildedRoseTest {
     @Test
     @Parameters
     public void qualityAccordingToSellinTest(String itemName, int itemSellIn, int itemQuality,  int qualityExpected){
-        Item item = new Item(itemName, itemSellIn, itemQuality);
+        Item item = new Item(itemName, itemSellIn, itemQuality, false);
         Item[] items = {item};
 
         GildedRose gildedrose = new GildedRose(items);
@@ -71,7 +71,7 @@ public class GildedRoseTest {
                 /* The Quality of an item is never more than 50 */
                 new Object[] {"Aged Brie", 50, 50},
                 /* "Sulfuras", being a legendary item, never has to decreases in Quality */
-                new Object[] {"Sulfuras, Hand of Ragnaros", 10, 10},
+                new Object[] {"Sulfuras, Hand of Ragnaros", 10, 80},
 
         };
     }
