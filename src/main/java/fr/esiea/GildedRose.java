@@ -6,7 +6,7 @@ class GildedRose {
     public GildedRose(Item[] items) {
         this.items = items;
     }
-
+  
     public void updateQuality(){
         for (int i = 0; i < items.length; ++i) {
             if(items[i].name.equals("Sulfuras, Hand of Ragnaros")) {items[i].quality = 80;}
