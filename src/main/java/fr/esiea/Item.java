@@ -10,6 +10,8 @@ public class Item {
 
     public boolean isConjured;
 
+    public int price; 
+
     public Item(String name, int sellIn, int quality, boolean isConjured) {
       this.name = name;
       this.sellIn = sellIn;
